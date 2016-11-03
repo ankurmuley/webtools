@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 3, 2016 6:47:00 PM by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+    <class name="neu.edu.Users" table="users" catalog="useraccountdb" optimistic-lock="version">
+        <id name="userName" type="string">
+            <column name="USER_NAME" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="100" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="45" />
+        </property>
+        <property name="dob" type="string">
+            <column name="DOB" length="30" />
+        </property>
+        <property name="gender" type="string">
+            <column name="GENDER" length="30" />
+        </property>
+        <property name="linesaboutyou" type="string">
+            <column name="linesaboutyou" length="1000" />
+        </property>
+        <property name="emailaddress" type="string">
+            <column name="emailaddress" length="45" />
+        </property>
+        <property name="phonenumber" type="string">
+            <column name="phonenumber" length="45" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="300" />
+        </property>
+        <property name="project1name" type="string">
+            <column name="project1Name" length="45" />
+        </property>
+        <property name="project2name" type="string">
+            <column name="project2Name" length="45" />
+        </property>
+        <property name="rateSkill3" type="string">
+            <column name="rateSkill3" length="45" />
+        </property>
+        <property name="project1description" type="string">
+            <column name="project1Description" length="300" />
+        </property>
+        <property name="project2description" type="string">
+            <column name="project2Description" length="300" />
+        </property>
+        <property name="university" type="string">
+            <column name="university" length="45" />
+        </property>
+        <property name="relevantCourses" type="string">
+            <column name="relevantCourses" length="300" />
+        </property>
+        <property name="company" type="string">
+            <column name="company" length="45" />
+        </property>
+        <property name="position" type="string">
+            <column name="position" length="45" />
+        </property>
+        <property name="jobDescription" type="string">
+            <column name="jobDescription" length="300" />
+        </property>
+        <property name="skill1" type="string">
+            <column name="skill1" length="45" />
+        </property>
+        <property name="rateSkill1" type="string">
+            <column name="rateSkill1" length="45" />
+        </property>
+        <property name="skill2" type="string">
+            <column name="skill2" length="45" />
+        </property>
+        <property name="rateSkill2" type="string">
+            <column name="rateSkill2" length="45" />
+        </property>
+        <property name="skill3" type="string">
+            <column name="skill3" length="45" />
+        </property>
+        <property name="reference1name" type="string">
+            <column name="reference1Name" length="45" />
+        </property>
+        <property name="reference1email" type="string">
+            <column name="reference1Email" length="45" />
+        </property>
+        <property name="reference1relation" type="string">
+            <column name="reference1Relation" length="45" />
+        </property>
+        <property name="reference2name" type="string">
+            <column name="reference2Name" length="45" />
+        </property>
+        <property name="reference2email" type="string">
+            <column name="reference2Email" length="45" />
+        </property>
+        <property name="userscol" type="string">
+            <column name="userscol" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
