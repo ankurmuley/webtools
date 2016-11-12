@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 3, 2016 7:54:14 PM by Hibernate Tools 5.2.0.Beta1 -->
+<hibernate-mapping>
+ <class catalog="resume_creator" name="neu.edu.entity.UserRegistration" table="useraccountdb">
+  <id name="userName" type="string">
+   <column length="30" name="USER_NAME"/>
+   <generator class="assigned"/>
+  </id>
+  <property generated="never" lazy="false" name="name" type="string">
+   <column length="100" name="NAME"/>
+  </property>
+  <property generated="never" lazy="false" name="password" type="string">
+   <column length="45" name="PASSWORD"/>
+  </property>
+  <property column="dob" name="dob" type="string"/>
+  <property name="gender" type="string"/>
+  <property name="linesaboutyou" type="string"/>
+  <property name="emailAddress" type="string"/>
+  <property name="phoneNumber" type="string"/>
+  <property name="address" type="string"/>
+  <property name="project1Name" type="string"/>
+  <property name="project1Description" type="string"/>
+  <property name="project2Name" type="string"/>
+  <property name="project2Description" type="string"/>
+  <property name="university" type="string"/>
+  <property name="relevantCourses" type="string"/>
+  <property name="company" type="string"/>
+  <property name="position" type="string"/>
+  <property name="jobDescription" type="string"/>
+  <property name="skill1" type="string"/>
+  <property name="rateSkill1" type="string"/>
+   <property name="skill2" type="string"/>
+  <property name="rateSkill2" type="string"/>
+  <property name="skill3" type="string"/>
+  <property name="rateSkill3" type="string"/>
+  <property name="reference1Name" type="string"/>
+  <property name="reference1Email" type="string"/>
+  <property name="reference1Relation" type="string"/>
+  <property name="reference2Name" type="string"/>
+  <property name="reference2Email" type="string"/>
+  <property name="reference2Relation" type="string"/>
+ </class>
+</hibernate-mapping>
