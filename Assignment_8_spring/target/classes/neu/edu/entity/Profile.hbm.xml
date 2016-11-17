@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 17, 2016 6:35:49 AM by Hibernate Tools 5.1.0.CR1 -->
+<hibernate-mapping>
+    <class name="neu.edu.entity.Profile" table="profile" catalog="resume_creator" optimistic-lock="version">
+        <id name="desc" type="int">
+            <column name="Desc" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="userAccount" class="neu.edu.entity.UserAccount" fetch="select">
+            <column name="USER_NAME" length="45" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

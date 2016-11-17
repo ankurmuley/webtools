@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 17, 2016 6:35:49 AM by Hibernate Tools 5.1.0.CR1 -->
+<hibernate-mapping>
+    <class name="neu.edu.entity.UserAccount" table="user_account" catalog="resume_creator" optimistic-lock="version">
+        <id name="userName" type="string">
+            <column name="USER_NAME" length="30" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="100" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="45" />
+        </property>
+        <property name="age" type="timestamp">
+            <column name="AGE" length="19" />
+        </property>
+        <set name="profiles" table="profile" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="USER_NAME" length="45" />
+            </key>
+            <one-to-many class="neu.edu.entity.Profile" />
+        </set>
+    </class>
+</hibernate-mapping>
